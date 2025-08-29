@@ -2,7 +2,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Facebook, Twitter, Linkedin, CheckCircle, Shield, Zap, Users } from "lucide-react";
 import Navigation from "@/components/Navigation";
-import HeroSection from "@/components/HeroSection";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import StatsSection from "@/components/StatsSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -13,7 +12,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white text-gray-800">
       <Navigation />
-      <HeroSection />
       <BeforeAfterSlider />
       <StatsSection />
       <ServicesSection />
