@@ -49,7 +49,7 @@ const BeforeAfterSlider = () => {
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white max-w-5xl px-8">
               <h1 className="text-5xl md:text-7xl font-bold mb-8">Business IT Solutions</h1>
-              <p className="text-xl md:text-2xl mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl mb-12 leading-relaxed max-w-4xl mx-auto">
                 Enterprise technology that drives growth
               </p>
               <p className="text-lg md:text-xl mb-12 opacity-90 max-w-3xl mx-auto">
@@ -58,17 +58,17 @@ const BeforeAfterSlider = () => {
             </div>
           </div>
 
+          {/* Slide Indicators */}
+          <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex space-x-3">
+            <div className={`w-3 h-3 rounded-full transition-all duration-300 ${sliderPosition > 50 ? 'bg-white' : 'bg-white/40'}`}></div>
+            <div className={`w-3 h-3 rounded-full transition-all duration-300 ${sliderPosition <= 50 ? 'bg-white' : 'bg-white/40'}`}></div>
+          </div>
+
           {/* Mouse scroll indicator */}
-          <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+          <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
             <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
               <div className="w-1 h-3 bg-white/60 rounded-full mt-2"></div>
             </div>
-          </div>
-
-          {/* Slide Indicators */}
-          <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex space-x-3 mb-16">
-            <div className={`w-3 h-3 rounded-full transition-all duration-300 ${sliderPosition > 50 ? 'bg-white' : 'bg-white/40'}`}></div>
-            <div className={`w-3 h-3 rounded-full transition-all duration-300 ${sliderPosition <= 50 ? 'bg-white' : 'bg-white/40'}`}></div>
           </div>
         </div>
 
@@ -79,8 +79,8 @@ const BeforeAfterSlider = () => {
             clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)`
           }}
         >
-          {/* Logo - Top Left */}
-          <div className="absolute top-8 left-8">
+          {/* Logo - Top Center (Same position as Business) */}
+          <div className="absolute top-12 left-1/2 transform -translate-x-1/2">
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-lg">
                 <span className="text-green-600 font-bold text-xl">Z</span>
