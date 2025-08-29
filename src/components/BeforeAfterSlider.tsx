@@ -1,12 +1,72 @@
 import { useState, useRef, useEffect } from "react";
-import { Slider } from "@/components/ui/slider";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const BeforeAfterSlider = () => {
-  const [sliderValue, setSliderValue] = useState([50]);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [dragStart, setDragStart] = useState<number | null>(null);
+  const [isDragging, setIsDragging] = useState(false);
 
-  const handleSliderChange = (value: number[]) => {
-    setSliderValue(value);
+  const slides = [
+    {
+      id: 'home',
+      title: 'Home Solutions',
+      subtitle: 'Smart home technology and reliable IT support for modern families and home offices',
+      services: [
+        'Smart Home Setup',
+        'Wi-Fi Optimization', 
+        'Device Support',
+        'Home Security Systems'
+      ],
+      backgroundImage: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400&h=800&fit=crop',
+      gradient: 'from-green-600/90 to-green-800/90'
+    },
+    {
+      id: 'business', 
+      title: 'Business IT Solutions',
+      subtitle: 'Enterprise technology that drives growth',
+      description: 'Empower your business with scalable IT infrastructure, cybersecurity, cloud services, and strategic technology consulting.',
+      services: [
+        'Network Infrastructure',
+        'Cybersecurity Solutions',
+        'Cloud Services & Migration', 
+        '24/7 IT Support'
+      ],
+      backgroundImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&h=800&fit=crop',
+      gradient: 'from-blue-600/90 to-blue-800/90'
+    }
+  ];
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    setDragStart(e.clientX);
+    setIsDragging(true);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging || dragStart === null) return;
+    
+    const diff = e.clientX - dragStart;
+    if (Math.abs(diff) > 100) {
+      if (diff > 0) {
+        prevSlide();
+      } else {
+        nextSlide();
+      }
+      setIsDragging(false);
+      setDragStart(null);
+    }
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+    setDragStart(null);
   };
 
   return (
@@ -22,117 +82,105 @@ const BeforeAfterSlider = () => {
         </div>
 
         <div className="max-w-6xl mx-auto relative">
-          {/* Before/After Container */}
+          {/* Slider Container */}
           <div 
-            ref={containerRef}
-            className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl"
+            className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl cursor-grab active:cursor-grabbing"
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseUp}
           >
-            {/* Business Side (Right) */}
-            <div className="absolute inset-0">
-              <div 
-                className="h-full bg-cover bg-center"
-                style={{
-                  backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=800&fit=crop')"
-                }}
+            {/* Slides */}
+            {slides.map((slide, index) => (
+              <div
+                key={slide.id}
+                className={`absolute inset-0 transition-transform duration-500 ease-out ${
+                  index === currentSlide ? 'translate-x-0' : 
+                  index < currentSlide ? '-translate-x-full' : 'translate-x-full'
+                }`}
               >
-                <div className="absolute inset-0 bg-gradient-to-l from-blue-900/80 to-blue-900/60"></div>
-                <div className="absolute inset-0 flex items-center justify-end pr-8 md:pr-16">
-                  <div className="text-right text-white max-w-md">
-                    <h3 className="text-3xl md:text-4xl font-bold mb-4">Business Solutions</h3>
-                    <p className="text-lg md:text-xl mb-6">
-                      Enterprise-grade IT infrastructure, cybersecurity, and strategic consulting to drive your business forward
-                    </p>
-                    <ul className="text-left space-y-2">
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                        Network Infrastructure
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                        Cybersecurity Solutions
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                        Cloud Services & Migration
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                        24/7 IT Support
-                      </li>
-                    </ul>
+                <div 
+                  className="h-full bg-cover bg-center relative"
+                  style={{ backgroundImage: `url(${slide.backgroundImage})` }}
+                >
+                  <div className={`absolute inset-0 bg-gradient-to-r ${slide.gradient}`}></div>
+                  
+                  {/* Logo */}
+                  <div className="absolute top-8 left-8">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-lg">
+                        <span className="text-primary font-bold text-xl">Z</span>
+                      </div>
+                      <div className="text-2xl font-bold text-white">
+                        ZyberNetSolutions
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center text-white max-w-4xl px-8">
+                      <h3 className="text-4xl md:text-6xl font-bold mb-6">{slide.title}</h3>
+                      <p className="text-xl md:text-2xl mb-8 leading-relaxed">
+                        {slide.subtitle}
+                      </p>
+                      {slide.description && (
+                        <p className="text-lg md:text-xl mb-8 opacity-90">
+                          {slide.description}
+                        </p>
+                      )}
+                      
+                      {/* Services Grid */}
+                      <div className="grid grid-cols-2 gap-4 max-w-2xl mx-auto">
+                        {slide.services.map((service, serviceIndex) => (
+                          <div key={serviceIndex} className="flex items-center justify-start bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                            <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                            <span className="text-white font-medium">{service}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            ))}
 
-            {/* Home Side (Left) */}
-            <div 
-              className="absolute inset-0 transition-all duration-300 ease-out"
-              style={{
-                clipPath: `polygon(0 0, ${sliderValue[0]}% 0, ${sliderValue[0]}% 100%, 0 100%)`
-              }}
+            {/* Navigation Arrows */}
+            <button
+              onClick={prevSlide}
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-200 z-10"
             >
-              <div 
-                className="h-full bg-cover bg-center"
-                style={{
-                  backgroundImage: "url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=800&fit=crop')"
-                }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-green-900/80 to-green-900/60"></div>
-                <div className="absolute inset-0 flex items-center justify-start pl-8 md:pl-16">
-                  <div className="text-left text-white max-w-md">
-                    <h3 className="text-3xl md:text-4xl font-bold mb-4">Home Solutions</h3>
-                    <p className="text-lg md:text-xl mb-6">
-                      Smart home technology and reliable IT support for modern families and home offices
-                    </p>
-                    <ul className="space-y-2">
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                        Smart Home Setup
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                        Wi-Fi Optimization
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                        Device Support
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                        Home Security Systems
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <ChevronLeft className="h-6 w-6" />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-200 z-10"
+            >
+              <ChevronRight className="h-6 w-6" />
+            </button>
 
-            {/* Slider Handle */}
-            <div 
-              className="absolute top-0 bottom-0 w-1 bg-white shadow-lg z-10 transition-all duration-300 ease-out"
-              style={{ left: `${sliderValue[0]}%` }}
-            >
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-lg border-2 border-gray-300 flex items-center justify-center">
-                <div className="w-1 h-4 bg-gray-400 rounded-full"></div>
-              </div>
+            {/* Slide Indicators */}
+            <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+              {slides.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    index === currentSlide ? 'bg-white' : 'bg-white/40'
+                  }`}
+                />
+              ))}
             </div>
           </div>
 
-          {/* Slider Control */}
-          <div className="mt-8 px-8">
-            <Slider
-              value={sliderValue}
-              onValueChange={handleSliderChange}
-              max={100}
-              min={0}
-              step={1}
-              className="w-full"
-            />
-            <div className="flex justify-between mt-2 text-sm text-gray-600">
-              <span>Home Solutions</span>
-              <span>Business Solutions</span>
-            </div>
+          {/* Slide Labels */}
+          <div className="flex justify-between mt-6 px-8 text-gray-600">
+            <span className={`transition-all duration-300 ${currentSlide === 0 ? 'text-green-600 font-semibold' : ''}`}>
+              Home Solutions
+            </span>
+            <span className={`transition-all duration-300 ${currentSlide === 1 ? 'text-blue-600 font-semibold' : ''}`}>
+              Business Solutions
+            </span>
           </div>
         </div>
       </div>
