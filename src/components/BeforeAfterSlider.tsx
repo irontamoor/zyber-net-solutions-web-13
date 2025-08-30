@@ -34,7 +34,7 @@ const BeforeAfterSlider = () => {
                   <div className="text-xs opacity-90">Repair & maintenance</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
-                  <div className="font-semibold mb-1">Data Protection</div>
+                  <div className="font-semibold mb-1">Security Setup</div>
                   <div className="text-xs opacity-90">Backup & security</div>
                 </div>
               </div>
