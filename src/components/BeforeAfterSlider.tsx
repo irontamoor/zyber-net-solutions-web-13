@@ -1,18 +1,13 @@
 import { useState } from "react";
-
 const BeforeAfterSlider = () => {
-  return (
-    <section className="relative overflow-hidden">
+  return <section className="relative overflow-hidden">
       <div className="relative h-screen w-full flex">
         {/* Home Solutions - Left Half */}
         <div className="w-1/2 bg-gradient-to-br from-green-500/90 to-green-700/90 relative">
           {/* Background Image */}
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400&h=800&fit=crop')"
-            }}
-          ></div>
+          <div className="absolute inset-0 bg-cover bg-center" style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400&h=800&fit=crop')"
+        }}></div>
           <div className="absolute inset-0 bg-gradient-to-br from-green-500/90 to-green-700/90"></div>
           
           {/* Logo - Top Center */}
@@ -36,24 +31,7 @@ const BeforeAfterSlider = () => {
               </p>
               
               {/* Services Grid */}
-              <div className="grid grid-cols-1 gap-3">
-                <div className="flex items-center justify-start bg-white/20 backdrop-blur-sm rounded-lg p-3">
-                  <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
-                  <span className="text-white font-medium">Smart Home Setup</span>
-                </div>
-                <div className="flex items-center justify-start bg-white/20 backdrop-blur-sm rounded-lg p-3">
-                  <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
-                  <span className="text-white font-medium">Wi-Fi Optimization</span>
-                </div>
-                <div className="flex items-center justify-start bg-white/20 backdrop-blur-sm rounded-lg p-3">
-                  <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
-                  <span className="text-white font-medium">Device Support</span>
-                </div>
-                <div className="flex items-center justify-start bg-white/20 backdrop-blur-sm rounded-lg p-3">
-                  <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
-                  <span className="text-white font-medium">Home Security Systems</span>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -61,12 +39,9 @@ const BeforeAfterSlider = () => {
         {/* Business Solutions - Right Half */}
         <div className="w-1/2 bg-gradient-to-br from-teal-500/90 to-teal-700/90 relative">
           {/* Background Image */}
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&h=800&fit=crop')"
-            }}
-          ></div>
+          <div className="absolute inset-0 bg-cover bg-center" style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&h=800&fit=crop')"
+        }}></div>
           <div className="absolute inset-0 bg-gradient-to-br from-teal-500/90 to-teal-700/90"></div>
           
           {/* Logo - Top Center */}
@@ -108,8 +83,6 @@ const BeforeAfterSlider = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default BeforeAfterSlider;
