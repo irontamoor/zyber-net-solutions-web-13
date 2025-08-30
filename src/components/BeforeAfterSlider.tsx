@@ -17,9 +17,27 @@ const BeforeAfterSlider = () => {
           <div className="absolute inset-0 flex items-center justify-center z-10 pt-20">
             <div className="text-center text-white max-w-lg px-8">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Home Solutions</h1>
-              <p className="text-lg md:text-xl leading-relaxed">
+              <p className="text-lg md:text-xl leading-relaxed mb-6">
                 Smart home technology and reliable IT support for modern families and home offices
               </p>
+              <div className="grid grid-cols-2 gap-4 text-sm md:text-base">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                  <div className="font-semibold mb-1">Smart Home Setup</div>
+                  <div className="text-xs opacity-90">WiFi, Security, Automation</div>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                  <div className="font-semibold mb-1">Home Office IT</div>
+                  <div className="text-xs opacity-90">Remote work solutions</div>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                  <div className="font-semibold mb-1">Device Support</div>
+                  <div className="text-xs opacity-90">Repair & maintenance</div>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                  <div className="font-semibold mb-1">Data Protection</div>
+                  <div className="text-xs opacity-90">Backup & security</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
