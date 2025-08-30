@@ -35,7 +35,7 @@ const BeforeAfterSlider = () => {
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
                   <div className="font-semibold mb-1">Security Setup</div>
-                  <div className="text-xs opacity-90">Backup & security</div>
+                  <div className="text-xs opacity-90">CCTV & Alarm Systems</div>
                 </div>
               </div>
             </div>
