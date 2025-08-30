@@ -18,7 +18,7 @@ const BeforeAfterSlider = () => {
             <div className="text-center text-white max-w-lg px-8">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Home Solutions</h1>
               <p className="text-lg md:text-xl leading-relaxed mb-6">
-                Smart home technology and reliable IT support for modern families and home offices
+                Smart home technology and reliable IT support for modern families and home offices everywhere
               </p>
               <div className="grid grid-cols-2 gap-4 text-sm md:text-base">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
@@ -58,7 +58,7 @@ const BeforeAfterSlider = () => {
             <div className="text-center text-white max-w-lg px-8">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Business IT Solutions</h1>
               <p className="text-lg md:text-xl leading-relaxed mb-6">
-                Enterprise technology that drives growth. Empower your business with scalable IT infrastructure, cybersecurity, cloud services, and strategic technology consulting.
+                Enterprise technology that drives growth with scalable IT infrastructure, cybersecurity, and cloud services
               </p>
               <div className="grid grid-cols-2 gap-4 text-sm md:text-base">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
