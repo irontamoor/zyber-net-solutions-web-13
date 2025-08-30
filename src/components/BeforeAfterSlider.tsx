@@ -1,9 +1,9 @@
 const BeforeAfterSlider = () => {
   return (
     <section className="relative overflow-hidden">
-      <div className="relative h-screen w-full flex">
+      <div className="relative h-screen w-full flex group">
         {/* Home Solutions - Left Half */}
-        <div className="w-1/2 bg-gradient-to-br from-green-500/90 to-green-700/90 relative">
+        <div className="w-1/2 bg-gradient-to-br from-green-500/90 to-green-700/90 relative transition-all duration-500 ease-in-out hover:w-full group-hover:w-1/2 hover:!w-full cursor-pointer">
           {/* Background Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center" 
@@ -25,7 +25,7 @@ const BeforeAfterSlider = () => {
         </div>
 
         {/* Business Solutions - Right Half */}
-        <div className="w-1/2 bg-gradient-to-br from-teal-500/90 to-teal-700/90 relative">
+        <div className="w-1/2 bg-gradient-to-br from-teal-500/90 to-teal-700/90 relative transition-all duration-500 ease-in-out hover:w-full group-hover:w-1/2 hover:!w-full cursor-pointer">
           {/* Background Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center" 
@@ -47,10 +47,10 @@ const BeforeAfterSlider = () => {
         </div>
         
         {/* Centered Logo Over Both Areas */}
-        <div className="absolute top-12 left-1/2 transform -translate-x-1/2 z-20">
+        <div className="absolute top-12 left-1/2 transform -translate-x-1/2 z-30 pointer-events-none">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-lg">
-              <span className="text-gray-800 font-bold text-xl">Z</span>
+            <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-lg border-2 border-gray-200">
+              <span className="font-bold text-xl text-transparent bg-gradient-to-br from-gray-600 to-gray-800 bg-clip-text stroke-gray-800" style={{WebkitTextStroke: '1px #374151'}}>Z</span>
             </div>
             <div className="text-2xl font-bold text-white drop-shadow-lg">
               ZyberNetSolutions
