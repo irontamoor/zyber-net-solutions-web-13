@@ -1,9 +1,16 @@
+import { useNavigate } from "react-router-dom";
+
 const BeforeAfterSlider = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative overflow-hidden">
       <div className="relative h-screen w-full flex group">
         {/* Home Solutions - Left Half */}
-        <div className="w-1/2 bg-gradient-to-br from-green-500/90 to-green-700/90 relative transition-all duration-500 ease-in-out hover:w-full group-hover:w-1/2 hover:!w-full cursor-pointer">
+        <div 
+          className="w-1/2 bg-gradient-to-br from-green-500/90 to-green-700/90 relative transition-all duration-500 ease-in-out hover:w-full group-hover:w-1/2 hover:!w-full cursor-pointer"
+          onClick={() => navigate('/home')}
+        >
           {/* Background Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center" 
@@ -43,7 +50,10 @@ const BeforeAfterSlider = () => {
         </div>
 
         {/* Business Solutions - Right Half */}
-        <div className="w-1/2 bg-gradient-to-br from-teal-500/90 to-teal-700/90 relative transition-all duration-500 ease-in-out hover:w-full group-hover:w-1/2 hover:!w-full cursor-pointer">
+        <div 
+          className="w-1/2 bg-gradient-to-br from-teal-500/90 to-teal-700/90 relative transition-all duration-500 ease-in-out hover:w-full group-hover:w-1/2 hover:!w-full cursor-pointer"
+          onClick={() => navigate('/business')}
+        >
           {/* Background Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center" 
