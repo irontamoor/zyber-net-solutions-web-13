@@ -18,7 +18,7 @@ const BusinessPage = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-teal-700/20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-800">Business IT Solutions</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-teal-700">Business IT Solutions</h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
               Enterprise technology that drives growth with scalable IT infrastructure, cybersecurity, and cloud services
             </p>
@@ -59,7 +59,7 @@ const BusinessPage = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-gray-800">Enterprise IT Experts</h2>
+              <h2 className="text-4xl font-bold mb-6 text-teal-700">Enterprise IT Experts</h2>
               <p className="text-gray-600 text-lg mb-6 leading-relaxed">
                 With over a decade of proven IT expertise, ZyberNet Solutions has been the trusted technology partner for businesses and enterprises across the region.
               </p>
@@ -116,7 +116,7 @@ const BusinessPage = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-white/95 to-gray-50/95"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-gray-800">Get In Touch</h2>
+            <h2 className="text-4xl font-bold mb-4 text-teal-700">Get In Touch</h2>
             <p className="text-xl text-gray-600">
               Ready to transform your business IT infrastructure? Contact us today.
             </p>
