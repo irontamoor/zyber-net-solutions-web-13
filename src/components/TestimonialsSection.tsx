@@ -5,57 +5,57 @@ import { Star, Quote } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "CEO",
-      text: "ZyberNetSolutions transformed our IT infrastructure completely. Their 24/7 support has been invaluable to our growing business.",
+      name: "Sarah Thompson",
+      role: "Managing Director",
+      text: "ZyberNetSolutions transformed our IT infrastructure completely. Their round-the-clock support has been invaluable to our growing business.",
       rating: 5
     },
     {
-      name: "Michael Rodriguez",
-      role: "IT Director", 
+      name: "Michael Davies",
+      role: "IT Manager", 
       text: "Professional, reliable, and always available when we need them most. Their cybersecurity expertise saved us from potential threats.",
       rating: 5
     },
     {
-      name: "Emily Chen",
-      role: "Operations Manager",
-      text: "Working from home became seamless after their network setup. Outstanding remote support and quick response times.",
+      name: "Emma Clarke",
+      role: "Operations Director",
+      text: "Remote working became seamless after their network setup. Outstanding support and brilliant response times.",
       rating: 5
     },
     {
-      name: "David Thompson",
-      role: "Administrator",
-      text: "Their compliance expertise helped us meet HIPAA requirements effortlessly. Highly recommend their consultancy services.",
+      name: "David Wright",
+      role: "Practice Manager",
+      text: "Their compliance expertise helped us meet GDPR requirements effortlessly. Highly recommend their consultancy services.",
       rating: 5
     },
     {
-      name: "Lisa Parker",
-      role: "CTO",
+      name: "Lisa Bennett",
+      role: "Chief Technology Officer",
       text: "The digital transformation strategy they provided increased our efficiency by 40%. Exceptional strategic thinking.",
       rating: 5
     },
     {
-      name: "James Wilson",
-      role: "Security Officer",
-      text: "Best cybersecurity implementation we've experienced. Their team is knowledgeable and responsive to our industry needs.",
+      name: "James Robinson",
+      role: "Security Manager",
+      text: "Brilliant cybersecurity implementation. Their team is knowledgeable and responsive to our industry requirements.",
       rating: 5
     },
     {
-      name: "Dr. Patricia Williams",
-      role: "School District Superintendent",
-      text: "ZyberNet transformed our entire district's IT infrastructure. 15 schools now have secure, fast networks supporting 8,000 students and staff.",
+      name: "Dr. Patricia Mitchell",
+      role: "Head Teacher",
+      text: "ZyberNet transformed our entire academy trust's IT infrastructure. 15 schools now have secure, fast networks supporting 8,000 pupils and staff.",
       rating: 5
     },
     {
-      name: "Mark Anderson",
-      role: "Non-Profit Executive Director",
-      text: "Their cybersecurity expertise protected our donor database and helped us achieve compliance. Professional service at a price nonprofits can afford.",
+      name: "Mark Henderson",
+      role: "Charity Director",
+      text: "Their cybersecurity expertise protected our donor database and helped us achieve compliance. Professional service at a price charities can afford.",
       rating: 5
     },
     {
-      name: "Dr. Rachel Martinez",
-      role: "Healthcare Administrator",
-      text: "HIPAA compliance made simple. Their healthcare IT solutions ensure patient data security while improving our operational efficiency significantly.",
+      name: "Dr. Rachel Phillips",
+      role: "NHS Trust Administrator",
+      text: "Data protection compliance made simple. Their healthcare IT solutions ensure patient data security whilst improving our operational efficiency significantly.",
       rating: 5
     }
   ];
