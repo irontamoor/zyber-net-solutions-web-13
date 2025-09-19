@@ -41,21 +41,21 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      name: "Maria Garcia",
-      role: "Homeowner",
-      text: "The CCTV system they installed gives us complete peace of mind. Professional installation and excellent video quality throughout our property.",
+      name: "Dr. Patricia Williams",
+      role: "School District Superintendent",
+      text: "ZyberNet transformed our entire district's IT infrastructure. 15 schools now have secure, fast networks supporting 8,000 students and staff.",
       rating: 5
     },
     {
-      name: "Robert Kim",
-      role: "Homeowner",
-      text: "Our smart home automation is incredible! They connected everything - lights, security, climate control. One app controls it all perfectly.",
+      name: "Mark Anderson",
+      role: "Non-Profit Executive Director",
+      text: "Their cybersecurity expertise protected our donor database and helped us achieve compliance. Professional service at a price nonprofits can afford.",
       rating: 5
     },
     {
-      name: "Jennifer Lee",
-      role: "Remote Worker",
-      text: "Their home office network setup made my work-from-home experience flawless. Fast internet, reliable connections, and great support.",
+      name: "Dr. Rachel Martinez",
+      role: "Healthcare Administrator",
+      text: "HIPAA compliance made simple. Their healthcare IT solutions ensure patient data security while improving our operational efficiency significantly.",
       rating: 5
     }
   ];
@@ -68,7 +68,7 @@ const TestimonialsSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-gray-800">What Our Clients Say</h2>
           <p className="text-xl text-gray-600 mb-8">
-            Trusted by businesses, enterprises, and homeowners nationwide
+            Trusted by businesses, schools, healthcare organizations, and non-profits nationwide
           </p>
           <div className="flex justify-center items-center space-x-8 text-center">
             <div>
