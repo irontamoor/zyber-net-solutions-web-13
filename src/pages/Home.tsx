@@ -16,7 +16,7 @@ const HomePage = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-green-700/20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-800">Home Solutions</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-green-600">Home Solutions</h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
               Smart home technology and reliable IT support for modern families and home offices everywhere
             </p>
@@ -53,7 +53,7 @@ const HomePage = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-gray-50/95 to-white/95"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-gray-800">Home IT Services</h2>
+            <h2 className="text-4xl font-bold mb-4 text-green-600">Home IT Services</h2>
             <p className="text-xl text-gray-600">Complete technology solutions for your home</p>
           </div>
           <div className="grid lg:grid-cols-3 gap-8">
@@ -115,7 +115,7 @@ const HomePage = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-gray-800">Home Technology Experts</h2>
+              <h2 className="text-4xl font-bold mb-6 text-green-600">Home Technology Experts</h2>
               <p className="text-gray-600 text-lg mb-6 leading-relaxed">
                 Transform your home into a smart, secure, and connected environment with our expert home technology services.
               </p>
@@ -165,7 +165,7 @@ const HomePage = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-white/95 to-gray-50/95"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-gray-800">Get In Touch</h2>
+            <h2 className="text-4xl font-bold mb-4 text-green-600">Get In Touch</h2>
             <p className="text-xl text-gray-600">
               Ready to upgrade your home technology? Contact us today.
             </p>

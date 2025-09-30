@@ -66,7 +66,7 @@ const TestimonialsSection = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-gray-800">What Our Customers Say</h2>
+          <h2 className="text-4xl font-bold mb-4 text-green-600">What Our Customers Say</h2>
           <p className="text-xl text-gray-600 mb-8">
             Trusted by families, remote workers, and homeowners across the UK
           </p>
