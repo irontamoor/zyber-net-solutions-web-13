@@ -6,56 +6,56 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Sarah Thompson",
-      role: "Managing Director",
-      text: "ZyberNetSolutions transformed our IT infrastructure completely. Their round-the-clock support has been invaluable to our growing business.",
+      role: "Remote Marketing Consultant",
+      text: "Working from home is brilliant now! They set up my entire home office with dual monitors and lightning-fast WiFi. Video calls never drop anymore.",
       rating: 5
     },
     {
       name: "Michael Davies",
-      role: "IT Manager", 
-      text: "Professional, reliable, and always available when we need them most. Their cybersecurity expertise saved us from potential threats.",
+      role: "Homeowner", 
+      text: "Our smart home setup is incredible. Lights, heating, security cameras - all controlled from my phone. The installation was seamless and they explained everything clearly.",
       rating: 5
     },
     {
       name: "Emma Clarke",
-      role: "Operations Director",
-      text: "Remote working became seamless after their network setup. Outstanding support and brilliant response times.",
+      role: "Freelance Designer",
+      text: "My home office transformation was amazing. They sorted out my WiFi dead zones and set up cloud backup for all my work. Couldn't be happier!",
       rating: 5
     },
     {
       name: "David Wright",
-      role: "Practice Manager",
-      text: "Their compliance expertise helped us meet GDPR requirements effortlessly. Highly recommend their consultancy services.",
+      role: "Remote Software Developer",
+      text: "Best decision I made was getting ZyberNet to set up my home office. Three monitors, perfect cable management, and stable internet for video meetings all day.",
       rating: 5
     },
     {
       name: "Lisa Bennett",
-      role: "Chief Technology Officer",
-      text: "The digital transformation strategy they provided increased our efficiency by 40%. Exceptional strategic thinking.",
+      role: "Family Home",
+      text: "Our home security system gives us real peace of mind. CCTV cameras, smart alarms, and we can check everything from our phones whilst on holiday. Brilliant!",
       rating: 5
     },
     {
       name: "James Robinson",
-      role: "Security Manager",
-      text: "Brilliant cybersecurity implementation. Their team is knowledgeable and responsive to our industry requirements.",
+      role: "Remote Project Manager",
+      text: "Working from home full-time now thanks to their professional setup. Fast internet, proper desk setup, and backup systems mean I'm more productive than at the office.",
       rating: 5
     },
     {
-      name: "Dr. Patricia Mitchell",
-      role: "Head Teacher",
-      text: "ZyberNet transformed our entire academy trust's IT infrastructure. 15 schools now have secure, fast networks supporting 8,000 pupils and staff.",
+      name: "Patricia Mitchell",
+      role: "Online Teacher",
+      text: "Teaching from home needed reliable tech. They installed brilliant WiFi coverage throughout my house and sorted my webcam and lighting setup. Students say it's like I'm in a professional studio!",
       rating: 5
     },
     {
       name: "Mark Henderson",
-      role: "Charity Director",
-      text: "Their cybersecurity expertise protected our donor database and helped us achieve compliance. Professional service at a price charities can afford.",
+      role: "Homeowner",
+      text: "Our smart home is fantastic. Automated lighting, thermostat control, and the kids love the voice-activated music system. ZyberNet made it all work together perfectly.",
       rating: 5
     },
     {
-      name: "Dr. Rachel Phillips",
-      role: "NHS Trust Administrator",
-      text: "Data protection compliance made simple. Their healthcare IT solutions ensure patient data security whilst improving our operational efficiency significantly.",
+      name: "Rachel Phillips",
+      role: "Remote Accountant",
+      text: "My home office setup is spot on. They installed a mesh WiFi system that reaches every corner, set up secure cloud storage, and configured my printer properly. No more tech headaches!",
       rating: 5
     }
   ];
@@ -66,9 +66,9 @@ const TestimonialsSection = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-gray-800">What Our Clients Say</h2>
+          <h2 className="text-4xl font-bold mb-4 text-gray-800">What Our Customers Say</h2>
           <p className="text-xl text-gray-600 mb-8">
-            Trusted by businesses, schools, healthcare organizations, and non-profits nationwide
+            Trusted by families, remote workers, and homeowners across the UK
           </p>
           <div className="flex justify-center items-center space-x-8 text-center">
             <div>
