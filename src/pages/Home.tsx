@@ -13,31 +13,31 @@ const HomePage = () => {
       {/* Hero Section */}
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=1400&h=800&fit=crop')" }}></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-green-700/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-green-600">Home Solutions</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary">Home Solutions</h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
               Smart home technology and reliable IT support for modern families and home offices everywhere
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-green-200">
-                <Home className="h-8 w-8 text-green-600 mb-3 mx-auto" />
+              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-primary/30">
+                <Home className="h-8 w-8 text-primary mb-3 mx-auto" />
                 <h3 className="font-semibold mb-2">Smart Home Setup</h3>
                 <p className="text-sm text-gray-600">WiFi, Security, Automation</p>
               </div>
-              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-green-200">
-                <Monitor className="h-8 w-8 text-green-600 mb-3 mx-auto" />
+              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-primary/30">
+                <Monitor className="h-8 w-8 text-primary mb-3 mx-auto" />
                 <h3 className="font-semibold mb-2">Home Office IT</h3>
                 <p className="text-sm text-gray-600">Remote work solutions</p>
               </div>
-              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-green-200">
-                <Zap className="h-8 w-8 text-green-600 mb-3 mx-auto" />
+              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-primary/30">
+                <Zap className="h-8 w-8 text-primary mb-3 mx-auto" />
                 <h3 className="font-semibold mb-2">Device Support</h3>
                 <p className="text-sm text-gray-600">Repair & maintenance</p>
               </div>
-              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-green-200">
-                <Shield className="h-8 w-8 text-green-600 mb-3 mx-auto" />
+              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-primary/30">
+                <Shield className="h-8 w-8 text-primary mb-3 mx-auto" />
                 <h3 className="font-semibold mb-2">CCTV & Alarm Systems</h3>
                 <p className="text-sm text-gray-600">Home security solutions</p>
               </div>
@@ -53,13 +53,13 @@ const HomePage = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-gray-50/95 to-white/95"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-green-600">Home IT Services</h2>
+            <h2 className="text-4xl font-bold mb-4 text-primary">Home IT Services</h2>
             <p className="text-xl text-gray-600">Complete technology solutions for your home</p>
           </div>
           <div className="grid lg:grid-cols-3 gap-8">
-            <Card className="bg-white/95 backdrop-blur-sm border-green-200 shadow-lg hover:shadow-xl transition-all duration-300">
+            <Card className="bg-white/95 backdrop-blur-sm border-primary/30 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardHeader>
-                <Wifi className="h-12 w-12 text-green-600 mb-4" />
+                <Wifi className="h-12 w-12 text-primary mb-4" />
                 <CardTitle className="text-gray-800">Smart Home Setup</CardTitle>
               </CardHeader>
               <CardContent>
@@ -73,9 +73,9 @@ const HomePage = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-white/95 backdrop-blur-sm border-green-200 shadow-lg hover:shadow-xl transition-all duration-300">
+            <Card className="bg-white/95 backdrop-blur-sm border-primary/30 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardHeader>
-                <Monitor className="h-12 w-12 text-green-600 mb-4" />
+                <Monitor className="h-12 w-12 text-primary mb-4" />
                 <CardTitle className="text-gray-800">Home Office Setup</CardTitle>
               </CardHeader>
               <CardContent>
@@ -89,9 +89,9 @@ const HomePage = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-white/95 backdrop-blur-sm border-green-200 shadow-lg hover:shadow-xl transition-all duration-300">
+            <Card className="bg-white/95 backdrop-blur-sm border-primary/30 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardHeader>
-                <Shield className="h-12 w-12 text-green-600 mb-4" />
+                <Shield className="h-12 w-12 text-primary mb-4" />
                 <CardTitle className="text-gray-800">Home Security</CardTitle>
               </CardHeader>
               <CardContent>
@@ -115,7 +115,7 @@ const HomePage = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-green-600">Home Technology Experts</h2>
+              <h2 className="text-4xl font-bold mb-6 text-primary">Home Technology Experts</h2>
               <p className="text-gray-600 text-lg mb-6 leading-relaxed">
                 Transform your home into a smart, secure, and connected environment with our expert home technology services.
               </p>
@@ -124,31 +124,31 @@ const HomePage = () => {
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3" />
+                  <CheckCircle className="h-6 w-6 text-primary mr-3" />
                   <span className="text-gray-700 font-medium">Smart Home Specialists</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3" />
+                  <CheckCircle className="h-6 w-6 text-primary mr-3" />
                   <span className="text-gray-700 font-medium">Home Office Setup</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3" />
+                  <CheckCircle className="h-6 w-6 text-primary mr-3" />
                   <span className="text-gray-700 font-medium">Security System Installation</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3" />
+                  <CheckCircle className="h-6 w-6 text-primary mr-3" />
                   <span className="text-gray-700 font-medium">24/7 Technical Support</span>
                 </div>
               </div>
             </div>
             <div className="space-y-6">
-              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-green-200">
-                <Home className="h-8 w-8 text-green-600 mb-3" />
+              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-primary/30">
+                <Home className="h-8 w-8 text-primary mb-3" />
                 <h3 className="text-gray-800 font-semibold mb-2">Smart Living</h3>
                 <p className="text-gray-600 text-sm">Advanced home automation for modern families</p>
               </div>
-              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-green-200">
-                <Monitor className="h-8 w-8 text-green-600 mb-3" />
+              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-primary/30">
+                <Monitor className="h-8 w-8 text-primary mb-3" />
                 <h3 className="text-gray-800 font-semibold mb-2">Remote Work Ready</h3>
                 <p className="text-gray-600 text-sm">Professional home office setups for productivity</p>
               </div>
@@ -165,32 +165,32 @@ const HomePage = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-white/95 to-gray-50/95"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-green-600">Get In Touch</h2>
+            <h2 className="text-4xl font-bold mb-4 text-primary">Get In Touch</h2>
             <p className="text-xl text-gray-600">
               Ready to upgrade your home technology? Contact us today.
             </p>
           </div>
           <div className="grid lg:grid-cols-2 gap-8 max-w-3xl mx-auto">
-            <Card className="bg-white/95 backdrop-blur-sm border-green-200 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+            <Card className="bg-white/95 backdrop-blur-sm border-primary/30 text-center shadow-lg hover:shadow-xl transition-all duration-300">
               <CardHeader>
-                <Phone className="h-12 w-12 text-green-600 mx-auto mb-4" />
+                <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
                 <CardTitle className="text-gray-800">Call Us</CardTitle>
               </CardHeader>
               <CardContent>
-                <a href="tel:+44020712345675" className="text-green-600 hover:text-green-500 text-lg font-semibold">
+                <a href="tel:+44020712345675" className="text-primary hover:text-secondary text-lg font-semibold">
                   (+44) 0 20 7123 4567
                 </a>
                 <p className="text-gray-600 mt-2">Available 24/7</p>
               </CardContent>
             </Card>
             
-            <Card className="bg-white/95 backdrop-blur-sm border-green-200 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+            <Card className="bg-white/95 backdrop-blur-sm border-primary/30 text-center shadow-lg hover:shadow-xl transition-all duration-300">
               <CardHeader>
-                <Mail className="h-12 w-12 text-green-600 mx-auto mb-4" />
+                <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
                 <CardTitle className="text-gray-800">Email Us</CardTitle>
               </CardHeader>
               <CardContent>
-                <a href="mailto:info@zybernetsolutions.com" className="text-green-600 hover:text-green-500 text-lg font-semibold">
+                <a href="mailto:info@zybernetsolutions.com" className="text-primary hover:text-secondary text-lg font-semibold">
                   info@zybernetsolutions.com
                 </a>
                 <p className="text-gray-600 mt-2">Quick response guaranteed</p>
@@ -207,24 +207,24 @@ const HomePage = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-green-700 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">Z</span>
                 </div>
                 <div className="text-2xl font-bold">
-                  ZyberNet<span className="text-green-400">Solutions</span>
+                  ZyberNet<span className="text-secondary">Solutions</span>
                 </div>
               </div>
               <p className="text-gray-300 mb-6 max-w-md">
                 Professional home technology solutions for modern families and home offices.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+                <a href="#" className="text-gray-400 hover:text-secondary transition-colors">
                   <Facebook className="h-5 w-5" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+                <a href="#" className="text-gray-400 hover:text-secondary transition-colors">
                   <Twitter className="h-5 w-5" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+                <a href="#" className="text-gray-400 hover:text-secondary transition-colors">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </div>
