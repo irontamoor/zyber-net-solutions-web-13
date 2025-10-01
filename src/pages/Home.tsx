@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Facebook, Twitter, Linkedin, CheckCircle, Shield, Zap, Users, Home, Wifi, Monitor } from "lucide-react";
 import Navigation from "@/components/Navigation";
-import StatsSection from "@/components/StatsSection";
+import HomeStatsSection from "@/components/HomeStatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 
 const HomePage = () => {
@@ -46,7 +46,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <StatsSection />
+      <HomeStatsSection />
 
       {/* Home Services Section */}
       <section className="py-20 relative overflow-hidden">
