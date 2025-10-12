@@ -2,9 +2,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Facebook, Twitter, Linkedin, CheckCircle, Shield, Zap, Users, Server, Cloud, Network } from "lucide-react";
 import Navigation from "@/components/Navigation";
-import StatsSection from "@/components/StatsSection";
+import BusinessStatsSection from "@/components/BusinessStatsSection";
 import BusinessServicesSection from "@/components/BusinessServicesSection";
-import ConsultancySection from "@/components/ConsultancySection";
+import BusinessConsultancySection from "@/components/BusinessConsultancySection";
 import BusinessTestimonialsSection from "@/components/BusinessTestimonialsSection";
 
 const BusinessPage = () => {
@@ -48,9 +48,9 @@ const BusinessPage = () => {
         </div>
       </section>
 
-      <StatsSection />
+      <BusinessStatsSection />
       <BusinessServicesSection />
-      <ConsultancySection />
+      <BusinessConsultancySection />
 
       {/* About Section */}
       <section className="py-20 relative overflow-hidden">
