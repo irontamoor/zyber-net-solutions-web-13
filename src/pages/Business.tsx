@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Phone, Mail, Facebook, Twitter, Linkedin, CheckCircle, Shield, Zap, Users, Server, Cloud, Network } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import StatsSection from "@/components/StatsSection";
-import ServicesSection from "@/components/ServicesSection";
+import BusinessServicesSection from "@/components/BusinessServicesSection";
 import ConsultancySection from "@/components/ConsultancySection";
-import TestimonialsSection from "@/components/TestimonialsSection";
+import BusinessTestimonialsSection from "@/components/BusinessTestimonialsSection";
 
 const BusinessPage = () => {
   return (
@@ -49,7 +49,7 @@ const BusinessPage = () => {
       </section>
 
       <StatsSection />
-      <ServicesSection />
+      <BusinessServicesSection />
       <ConsultancySection />
 
       {/* About Section */}
@@ -108,7 +108,7 @@ const BusinessPage = () => {
         </div>
       </section>
 
-      <TestimonialsSection />
+      <BusinessTestimonialsSection />
 
       {/* Contact Section */}
       <section id="contact" className="py-20 relative overflow-hidden">
