@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Facebook, Twitter, Linkedin, CheckCircle, Shield, Zap, Users, Server, Cloud, Network } from "lucide-react";
-import Navigation from "@/components/Navigation";
+import BusinessNavigation from "@/components/BusinessNavigation";
 import BusinessStatsSection from "@/components/BusinessStatsSection";
 import BusinessServicesSection from "@/components/BusinessServicesSection";
 import BusinessConsultancySection from "@/components/BusinessConsultancySection";
@@ -10,7 +10,7 @@ import BusinessTestimonialsSection from "@/components/BusinessTestimonialsSectio
 const BusinessPage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-800">
-      <Navigation />
+      <BusinessNavigation />
       
       {/* Hero Section */}
       <section className="py-20 relative overflow-hidden">
