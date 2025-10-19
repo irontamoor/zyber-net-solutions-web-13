@@ -17,7 +17,7 @@ const BusinessTestimonialsSection = () => {
       rating: 5
     },
     {
-      name: "David Martinez",
+      name: "David Matthews",
       role: "Operations Manager, Retail Company",
       text: "From network infrastructure to 24/7 support, they handle everything. Our 50-person team hasn't had a major IT issue in over a year.",
       rating: 5
@@ -36,8 +36,8 @@ const BusinessTestimonialsSection = () => {
     },
     {
       name: "Jennifer Collins",
-      role: "Director, Healthcare Organization",
-      text: "HIPAA compliance and patient data security were complex challenges. They delivered a robust, compliant solution with exceptional training for our staff.",
+      role: "Director, Healthcare Organisation",
+      text: "Data Protection Act and GDPR compliance along with patient data security were complex challenges. They delivered a robust, compliant solution with exceptional training for our staff.",
       rating: 5
     },
     {
@@ -55,7 +55,7 @@ const BusinessTestimonialsSection = () => {
     {
       name: "Richard Thompson",
       role: "Owner, Architecture Firm",
-      text: "Large file handling and cloud collaboration were crucial. Their network optimization and cloud setup doubled our team's productivity.",
+      text: "Large file handling and cloud collaboration were crucial. Their network optimisation and cloud setup doubled our team's productivity.",
       rating: 5
     }
   ];
