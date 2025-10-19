@@ -6,49 +6,49 @@ const BusinessTestimonialsSection = () => {
   const testimonials = [
     {
       name: "Robert Jenkins",
-      role: "CEO, TechCorp Solutions",
+      role: "CEO, Technology Company",
       text: "Their enterprise infrastructure transformed our operations. 99.9% uptime, seamless cloud migration, and outstanding support. A true technology partner.",
       rating: 5
     },
     {
       name: "Amanda Foster",
-      role: "IT Director, FinanceHub Ltd", 
+      role: "IT Director, Financial Services", 
       text: "Cybersecurity and compliance were critical for us. Their team delivered GDPR-compliant solutions and proactive threat management. Excellent service.",
       rating: 5
     },
     {
       name: "David Martinez",
-      role: "Operations Manager, RetailMax",
+      role: "Operations Manager, Retail Company",
       text: "From network infrastructure to 24/7 support, they handle everything. Our 50-person team hasn't had a major IT issue in over a year.",
       rating: 5
     },
     {
       name: "Catherine Williams",
-      role: "Managing Partner, Legal Associates",
+      role: "Managing Partner, Law Firm",
       text: "Data security is paramount in our industry. Their backup solutions and encryption protocols give us complete peace of mind with client information.",
       rating: 5
     },
     {
       name: "Thomas Anderson",
-      role: "CTO, Manufacturing Pro",
+      role: "CTO, Manufacturing Company",
       text: "Scaled from 20 to 200 employees seamlessly. Their infrastructure planning and system integration expertise saved us countless headaches and downtime.",
       rating: 5
     },
     {
       name: "Jennifer Collins",
-      role: "Director, HealthCare Plus",
+      role: "Director, Healthcare Organization",
       text: "HIPAA compliance and patient data security were complex challenges. They delivered a robust, compliant solution with exceptional training for our staff.",
       rating: 5
     },
     {
       name: "Michael Stevens",
-      role: "Founder, StartupHub",
+      role: "Founder, Technology Startup",
       text: "As a growing startup, we needed scalable IT. They provided enterprise-grade solutions at a price that fit our budget. Highly recommend.",
       rating: 5
     },
     {
       name: "Sarah Patterson",
-      role: "HR Director, GlobalTech",
+      role: "HR Director, Global Technology Company",
       text: "Managing devices for 300+ remote employees was overwhelming. Their MDM solution and help desk support transformed our IT operations.",
       rating: 5
     },
