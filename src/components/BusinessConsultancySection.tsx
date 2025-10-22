@@ -46,7 +46,7 @@ const BusinessConsultancySection = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-teal-50/50 to-cyan-50/50"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-gray-800">IT Consultancy Services</h2>
+          <h2 className="text-4xl font-bold mb-4 text-teal-700">IT Consultancy Services</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Strategic IT consulting to drive your business forward. Our experts help you make informed technology decisions that deliver real business value.
           </p>
@@ -79,7 +79,7 @@ const BusinessConsultancySection = () => {
         <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8 border border-teal-200 shadow-lg">
           <div className="grid lg:grid-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-800">Why Choose Our Consultancy?</h3>
+              <h3 className="text-2xl font-bold mb-4 text-teal-700">Why Choose Our Consultancy?</h3>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
                   <span className="text-teal-600 mr-2">•</span>
