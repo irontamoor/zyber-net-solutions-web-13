@@ -95,8 +95,8 @@ const BeforeAfterSlider = () => {
         {/* Centered Logo Over Both Areas */}
         <div className="absolute top-12 left-1/2 transform -translate-x-1/2 z-30 pointer-events-none">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-lg border-2 border-gray-200">
-              <span className="font-bold text-xl text-transparent bg-gradient-to-br from-gray-600 to-gray-800 bg-clip-text stroke-gray-800" style={{WebkitTextStroke: '1px #374151'}}>Z</span>
+            <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center shadow-lg">
+              <span className="font-bold text-xl text-white">Z</span>
             </div>
             <div className="text-2xl font-bold text-white drop-shadow-lg">
               ZyberNetSolutions
