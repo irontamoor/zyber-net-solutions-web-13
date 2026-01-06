@@ -15,7 +15,7 @@ const BusinessPage = () => {
       {/* Hero Section */}
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&h=800&fit=crop')" }}></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-teal-700/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-teal-400/50 to-teal-600/50"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-teal-900">Business IT Solutions</h1>
