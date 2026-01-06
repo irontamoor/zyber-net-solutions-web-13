@@ -26,8 +26,8 @@ const BusinessPage = () => {
                 ZyberNet<span className="text-teal-200">Solutions</span>
               </div>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-teal-950 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">Business IT Solutions</h1>
-            <p className="text-xl md:text-2xl text-gray-900 mb-8 leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">Business IT Solutions</h1>
+            <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed drop-shadow-[0_1px_4px_rgba(0,0,0,0.3)]">
               Enterprise technology that drives growth with scalable IT infrastructure, cybersecurity, and cloud services
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
