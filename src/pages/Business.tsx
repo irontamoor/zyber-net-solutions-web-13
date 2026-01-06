@@ -18,8 +18,16 @@ const BusinessPage = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-teal-400/50 to-teal-600/50"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-teal-900">Business IT Solutions</h1>
-            <p className="text-xl md:text-2xl text-gray-800 mb-8 leading-relaxed">
+            <div className="flex items-center justify-center space-x-3 mb-6">
+              <div className="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center shadow-xl">
+                <span className="font-bold text-2xl text-white">Z</span>
+              </div>
+              <div className="text-3xl font-bold text-white drop-shadow-lg">
+                ZyberNet<span className="text-teal-200">Solutions</span>
+              </div>
+            </div>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-teal-950 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">Business IT Solutions</h1>
+            <p className="text-xl md:text-2xl text-gray-900 mb-8 leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]">
               Enterprise technology that drives growth with scalable IT infrastructure, cybersecurity, and cloud services
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
