@@ -18,8 +18,8 @@ const BusinessPage = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-teal-700/20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-teal-700">Business IT Solutions</h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-teal-900">Business IT Solutions</h1>
+            <p className="text-xl md:text-2xl text-gray-800 mb-8 leading-relaxed">
               Enterprise technology that drives growth with scalable IT infrastructure, cybersecurity, and cloud services
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
