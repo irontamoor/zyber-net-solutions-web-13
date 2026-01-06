@@ -13,11 +13,11 @@ const HomePage = () => {
       {/* Hero Section */}
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=1400&h=800&fit=crop')" }}></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-300/30 to-teal-300/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-200/60 to-teal-200/60"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary">Home Solutions</h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
               Smart home technology and reliable IT support for modern families and home offices everywhere
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
